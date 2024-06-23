@@ -1,3 +1,6 @@
+THIS INFORMATION TELLS ABOUT MAIN.PY LOGIN PAGE USING TKINTER
+
+
 # Nandini's App - Hello Cuties
 
 This is a simple Tkinter-based login application. The application provides a user interface to enter a username and password and print these values to the console upon clicking the login button.
@@ -33,6 +36,59 @@ This is a simple Tkinter-based login application. The application provides a use
 - The main event loop (`tk_window.mainloop()`) starts the application.
 
 Feel free to modify and extend this application as needed!
+____________________________________________________________________________________________________________________________________________________________________
+
+BELOW INFORMATION TELLS ABOUT INDEX AND  STYLE FILES'S LOGIN PAGE
+
+## Features
+
+- Clean and modern design
+- Responsive layout
+- Animated entry
+- Interactive form elements
+
+## Files
+
+- `index.html`: The main HTML file containing the structure of the login page
+- `style.css`: The CSS file with all the styles for the login page
+
+## HTML Structure
+
+The HTML file (`index.html`) includes:
+
+- A container for the login form
+- A heading
+- Input fields for username and password
+- A submit button
+
+## CSS Styles
+
+The CSS file (`style.css`) includes:
+
+- Import of the Roboto font from Google Fonts
+- A gradient background for the body
+- Styling for the login container, form elements, and button
+- Hover and focus effects
+- A fade-in animation for the login container
+
+## Usage
+
+1. Save the HTML code in a file named `index.html`
+2. Save the CSS code in a file named `style.css`
+3. Make sure both files are in the same directory
+4. Open the `index.html` file in a web browser to view the login page
+
+## Customization
+
+You can easily customize the login page by modifying the CSS:
+
+- Change colors by updating the hex codes
+- Adjust sizes and spacing by modifying the pixel values
+- Alter the animation by editing the `@keyframes` rule
+
+## Browser Compatibility
+
+This login page should work in all modern browsers that support CSS3.
 
 ## License
 
