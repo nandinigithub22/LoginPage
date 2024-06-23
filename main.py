@@ -1,27 +1,29 @@
 from tkinter import *
 from functools import partial
 
-def validateLogin(username, password):
-	print("username entered :", username.get())
-	print("password entered :", password.get())
-	return
+def validate_login(username, password):
+    print("Username entered:", username.get())
+    print("Password entered:", password.get())
+    # Add further validation logic here
+    return
 
-#window
-tkWindow = Tk()
-tkWindow.geometry('900x900')
-tkWindow.title('login to nandinis app - hello cutiess')
+# Create main window
+tk_window = Tk()
+tk_window.geometry('400x200')
+tk_window.title('Login to Nandini\'s App - Hello Cuties')
 
-#username label and text entry box
-usernameLabel = Label(tkWindow, text="User Name").grid(row=0, column=0)
+# Create and place labels and entry boxes for username and password
+Label(tk_window, text="Username").grid(row=0, column=0, padx=10, pady=10)
 username = StringVar()
-usernameEntry = Entry(tkWindow, textvariable=username).grid(row=0, column=1)
-passwordLabel = Label(tkWindow,text="Password").grid(row=1, column=0)
+Entry(tk_window, textvariable=username).grid(row=0, column=1, padx=10, pady=10)
+
+Label(tk_window, text="Password").grid(row=1, column=0, padx=10, pady=10)
 password = StringVar()
-passwordEntry = Entry(tkWindow, textvariable=password, show='*').grid(row=1, column=1)
+Entry(tk_window, textvariable=password, show='*').grid(row=1, column=1, padx=10, pady=10)
 
-validateLogin = partial(validateLogin, username, password)
+# Create and place the login button
+validate_login = partial(validate_login, username, password)
+Button(tk_window, text="Login", command=validate_login).grid(row=2, column=1, pady=10)
 
-#login button
-loginButton = Button(tkWindow, text="Login", command=validateLogin).grid(row=8, column=0)
-
-tkWindow.mainloop()
+# Start the main event loop
+tk_window.mainloop()
